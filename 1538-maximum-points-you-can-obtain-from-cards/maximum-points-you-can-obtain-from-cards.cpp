@@ -8,8 +8,7 @@ public:
         }
         int ans = sum;
         for (int i = 1; i <= k; i++) {
-            sum = sum - cardPoints[k - i]
-                      + cardPoints[n - i];
+            sum = sum - cardPoints[k - i] + cardPoints[n - i];
             ans = max(ans, sum);
         }
         return ans;
